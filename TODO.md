@@ -5,10 +5,10 @@
 - [x] Create gemset
 - [x] Install Rails in gemset
 - [x] Generate Rails app with Postgres database
-- [x ] Verify Rails server
+- [x] Verify Rails server
 - [x] Create TODO
 - [x] Establish version control
-- [ ] Update gemfile
+- [x] Update gemfile
 - [ ] Create tests for Player model
 - [ ] Create Player MVC
 - [ ] Create tests for Games model
