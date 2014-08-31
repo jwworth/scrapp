@@ -15,7 +15,7 @@
 - [x] Create Games MVC
 - [x] Create basic layout
 - [x] Add link to view source code
-- [ ] Deploy develop branch to Heroku for QA
+- [x] Deploy develop branch to Heroku for QA
 - [ ] Push repository to Github
 - [ ] Deploy master branch to Heroku
 - [ ] Purchase domain and set up domain forwarding
