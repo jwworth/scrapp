@@ -2,7 +2,7 @@ class Game < ActiveRecord::Base
 
   ### ASSOCIATIONS
   belongs_to :winner, class_name: 'Player'
-  belongs_to :loser,  class_name: 'Player'
+  belongs_to :loser, class_name: 'Player'
 
   ### VALIDATIONS
   validates_presence_of :winner_id

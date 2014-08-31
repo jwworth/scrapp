@@ -12,7 +12,7 @@
 - [x] Create tests for Player model
 - [x] Create Player MVC
 - [x] Create tests for Games model
-- [ ] Create Games MVC
+- [x] Create Games MVC
 - [ ] Create basic layout
 - [ ] Add link to view source code
 - [ ] Deploy develop branch to Heroku for QA

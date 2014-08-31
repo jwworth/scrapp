@@ -1,0 +1,32 @@
+- if @game.errors.any?
+  .warning
+    = pluralize(@game.errors.count, "error")
+    prohibited this game from being saved:
+  %ul
+    - @game.errors.full_messages.each do |msg|
+      .warning
+        %li= msg
+
+= form_for(@game) do |f|
+  .field
+    = f.label :winner
+    %br/
+    = f.collection_select :winner_id, Player.all, :id, :name, :prompt => "Please select"
+  .field
+    = f.label :winner_score, "Winner Score"
+    %br/
+    = f.number_field :winner_score, placeholder: "Enter score"
+  .field
+    = f.label :loser
+    %br/
+    = f.collection_select :loser_id, Player.all, :id, :name, :prompt => "Please select"
+  .field
+    = f.label :loser_score, "Loser Score"
+    %br/
+    = f.number_field :loser_score, placeholder: "Enter score"
+  .field
+    = f.label :bingos
+    %br/
+    = f.number_field :bingos, placeholder: "Enter bingos (#)"
+  .actions
+    = f.submit

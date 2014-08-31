@@ -1,0 +1,19 @@
+%h1= "Game #" + @game.id.to_s
+%p
+  %strong Winner:
+  = @game.winner.name
+%p
+  %strong Winner Score:
+  = @game.winner_score
+%p
+  %strong Loser:
+  = @game.loser.name
+%p
+  %strong Loser Score:
+  = @game.loser_score
+%p
+  %strong Bingos:
+  = @game.bingos
+= link_to 'Edit', edit_game_path(@game)
+|
+\#{link_to 'Back', games_path}
