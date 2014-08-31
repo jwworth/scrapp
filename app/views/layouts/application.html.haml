@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title ScrabbleApp
+    %title My Scrabble
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -10,9 +10,9 @@
       .header
         %ul.nav.nav-pills.pull-right
           %li
-            %a{href: "https://github.com/jwworth/scrabble_app"}
+            %a{href: "https://github.com/jwworth/my_scrabble"}
               = image_tag "GitHub-Mark-32px.png", :class => "media-object"
-        %h3.text-mute= link_to "Scrabble App", root_path
+        %h3.text-mute= link_to "My Scrabble", root_path
       %p.lead We play Scrabble.
       %p
         = link_to "New Game", new_game_path, class: "btn btn-lg btn-success"
