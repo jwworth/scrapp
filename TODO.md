@@ -11,7 +11,7 @@
 - [x] Update gemfile
 - [x] Create tests for Player model
 - [x] Create Player MVC
-- [ ] Create tests for Games model
+- [x] Create tests for Games model
 - [ ] Create Games MVC
 - [ ] Create basic layout
 - [ ] Add link to view source code
