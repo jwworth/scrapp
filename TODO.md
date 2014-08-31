@@ -9,8 +9,8 @@
 - [x] Create TODO
 - [x] Establish version control
 - [x] Update gemfile
-- [ ] Create tests for Player model
-- [ ] Create Player MVC
+- [x] Create tests for Player model
+- [x] Create Player MVC
 - [ ] Create tests for Games model
 - [ ] Create Games MVC
 - [ ] Create basic layout
