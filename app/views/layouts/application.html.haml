@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %title ScrabbleApp
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container
+      .header
+        %ul.nav.nav-pills.pull-right
+          %li
+            %a{href: "https://github.com/jwworth/scrabble_app"}
+              = image_tag "GitHub-Mark-32px.png", :class => "media-object"
+        %h3.text-mute= link_to "Scrabble App", root_path
+      %p.lead We play Scrabble.
+      %p
+        = link_to "New Game", new_game_path, class: "btn btn-lg btn-success"
+        = link_to "New Player", new_player_path, class: "btn btn-lg btn-primary"
+      .row.marketing
+        = render 'shared/flash_messages'
+        = yield
+      .footer
+        %p.pull-right= "© " + Time.now.year.to_s
