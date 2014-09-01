@@ -19,4 +19,4 @@
 - [ ] Push repository to Github
 - [ ] Deploy master branch to Heroku
 - [ ] Purchase domain and set up domain forwarding
-
+- [ ] Add player rankings for root route
