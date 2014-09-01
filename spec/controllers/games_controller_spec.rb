@@ -23,13 +23,13 @@ RSpec.describe GamesController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # Game. As you add validations to Game, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
+  let(:valid_attributes) do
     skip("Add a hash of attributes valid for your model")
-  }
+  end
 
-  let(:invalid_attributes) {
+  let(:invalid_attributes) do
     skip("Add a hash of attributes invalid for your model")
-  }
+  end
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -70,9 +70,9 @@ RSpec.describe GamesController, type: :controller do
   describe "POST create" do
     describe "with valid params" do
       it "creates a new Game" do
-        expect {
+        expect do
           post :create, { game: valid_attributes }, valid_session
-        }.to change(Game, :count).by(1)
+        end.to change(Game, :count).by(1)
       end
 
       it "assigns a newly created game as @game" do
@@ -102,9 +102,9 @@ RSpec.describe GamesController, type: :controller do
 
   describe "PUT update" do
     describe "with valid params" do
-      let(:new_attributes) {
+      let(:new_attributes) do
         skip("Add a hash of attributes valid for your model")
-      }
+      end
 
       it "updates the requested game" do
         game = Game.create! valid_attributes
@@ -144,9 +144,9 @@ RSpec.describe GamesController, type: :controller do
   describe "DELETE destroy" do
     it "destroys the requested game" do
       game = Game.create! valid_attributes
-      expect {
+      expect do
         delete :destroy, { id: game.to_param }, valid_session
-      }.to change(Game, :count).by(-1)
+      end.to change(Game, :count).by(-1)
     end
 
     it "redirects to the games list" do

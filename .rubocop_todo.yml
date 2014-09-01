@@ -32,7 +32,7 @@ Style/BlockComments:
 # Offense count: 10
 # Cop supports --auto-correct.
 Style/Blocks:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 1
 # Configuration parameters: EnforcedStyle, SupportedStyles.
