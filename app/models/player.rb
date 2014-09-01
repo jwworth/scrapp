@@ -12,4 +12,3 @@ class Player < ActiveRecord::Base
     self.name = self.name.downcase.titleize
   end
 end
-

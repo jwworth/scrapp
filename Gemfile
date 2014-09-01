@@ -11,7 +11,7 @@ gem 'rails_12factor'
 gem 'sass-rails', '~> 4.0.3'
 # Use boostrap
 gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails' 
+gem 'autoprefixer-rails'
 # Use HAML
 gem 'haml'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,4 +55,3 @@ group :development, :test do
   # Add rubocop for best practice inspection
   gem 'rubocop'
 end
-

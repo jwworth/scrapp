@@ -17,4 +17,3 @@ class Game < ActiveRecord::Base
     self.bingos ||= 0
   end
 end
-
