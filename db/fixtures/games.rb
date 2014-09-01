@@ -140,4 +140,14 @@ Game.seed do |g|
   g.winner_score = 393
   g.loser_id = 2
   g.loser_score = 222
+  g.bingos = 1
+end
+
+Game.seed do |g|
+  g.created_at = "2014-08-31"
+  g.winner_id = 1
+  g.winner_score = 361
+  g.loser_id = 2
+  g.loser_score = 240
+  g.bingos = 1
 end
