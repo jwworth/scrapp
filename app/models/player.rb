@@ -8,6 +8,6 @@ class Player < ActiveRecord::Base
   before_save :standardize_capitalization
 
   def standardize_capitalization
-    self.name = self.name.downcase.titleize
+    self.name = name.downcase.titleize
   end
 end
