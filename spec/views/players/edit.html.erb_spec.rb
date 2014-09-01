@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "players/edit", :type => :view do
+RSpec.describe "players/edit", type: :view do
   before(:each) do
     @player = assign(:player, Player.create!(
-      :name => "MyString"
+      name: "MyString"
     ))
   end
 

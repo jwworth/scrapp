@@ -36,6 +36,8 @@ gem 'spring',        group: :development
 gem 'rack-wwwhisper', '~> 1.0'
 # Add seed-fu for better seed data
 gem 'seed-fu', '~> 2.3'
+# Add rubocop for best practice inspection
+gem 'rubocop'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
