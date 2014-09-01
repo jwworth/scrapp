@@ -1,3 +1,3 @@
-## my_scrabble
+## scrapp
 
 We play scrabble.
