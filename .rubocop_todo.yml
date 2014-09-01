@@ -81,7 +81,7 @@ Style/RedundantSelf:
 # Offense count: 8
 # Cop supports --auto-correct.
 Style/SingleSpaceBeforeFirstArg:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 56
 # Cop supports --auto-correct.
