@@ -16,6 +16,7 @@
 - [x] Create basic layout
 - [x] Add link to view source code
 - [x] Deploy develop branch to Heroku for QA
+- [x] Player model validation: high score must be greater than low score
 - [ ] Push repository to Github
 - [ ] Deploy master branch to Heroku
 - [ ] Purchase domain and set up domain forwarding

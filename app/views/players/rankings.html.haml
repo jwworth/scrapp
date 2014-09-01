@@ -1,0 +1,15 @@
+%h1 All-Time Rankings
+%table.table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @players.each do |player|
+      %tr
+        %td= player.name
+        %td= player.points
+
