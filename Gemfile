@@ -51,6 +51,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
-  # Add rubocop for best practice inspection
+  # Add rubocop and haml-lint for best practice inspection
   gem 'rubocop'
+  gem 'haml-lint'
 end
