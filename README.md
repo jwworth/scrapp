@@ -1,3 +1,3 @@
 ## scrapp
 
-We play scrabble.
+An app for tracking Scrabble games
