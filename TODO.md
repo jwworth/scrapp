@@ -17,7 +17,7 @@
 - [x] Add link to view source code
 - [x] Deploy develop branch to Heroku for QA
 - [x] Player model validation: high score must be greater than low score
-- [ ] Push repository to Github
-- [ ] Deploy master branch to Heroku
-- [ ] Purchase domain and set up domain forwarding
+- [x] Push repository to Github
+- [x] Deploy master branch to Heroku
+- [x] Purchase domain and set up domain forwarding
 - [ ] Add player rankings for root route
