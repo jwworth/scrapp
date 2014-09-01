@@ -17,7 +17,7 @@ Lint/HandleExceptions:
 # Offense count: 1
 # Cop supports --auto-correct.
 Lint/UnusedBlockArgument:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 50
 # Configuration parameters: AllowURI.
