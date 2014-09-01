@@ -4,7 +4,8 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.json
   def index
-    @games = Game.all
+    # Sort by newest
+    @games = Game.all.sort_by { |obj| obj.created_at }.reverse
   end
 
   # GET /games/1
