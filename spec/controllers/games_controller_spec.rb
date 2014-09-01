@@ -47,7 +47,7 @@ RSpec.describe GamesController, type: :controller do
   describe "GET show" do
     it "assigns the requested game as @game" do
       game = Game.create! valid_attributes
-      get :show, {id: game.to_param}, valid_session
+      get :show, { id: game.to_param }, valid_session
       expect(assigns(:game)).to eq(game)
     end
   end
@@ -62,7 +62,7 @@ RSpec.describe GamesController, type: :controller do
   describe "GET edit" do
     it "assigns the requested game as @game" do
       game = Game.create! valid_attributes
-      get :edit, {id: game.to_param}, valid_session
+      get :edit, { id: game.to_param }, valid_session
       expect(assigns(:game)).to eq(game)
     end
   end
@@ -71,30 +71,30 @@ RSpec.describe GamesController, type: :controller do
     describe "with valid params" do
       it "creates a new Game" do
         expect {
-          post :create, {game: valid_attributes}, valid_session
+          post :create, { game: valid_attributes }, valid_session
         }.to change(Game, :count).by(1)
       end
 
       it "assigns a newly created game as @game" do
-        post :create, {game: valid_attributes}, valid_session
+        post :create, { game: valid_attributes }, valid_session
         expect(assigns(:game)).to be_a(Game)
         expect(assigns(:game)).to be_persisted
       end
 
       it "redirects to the created game" do
-        post :create, {game: valid_attributes}, valid_session
+        post :create, { game: valid_attributes }, valid_session
         expect(response).to redirect_to(Game.last)
       end
     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved game as @game" do
-        post :create, {game: invalid_attributes}, valid_session
+        post :create, { game: invalid_attributes }, valid_session
         expect(assigns(:game)).to be_a_new(Game)
       end
 
       it "re-renders the 'new' template" do
-        post :create, {game: invalid_attributes}, valid_session
+        post :create, { game: invalid_attributes }, valid_session
         expect(response).to render_template("new")
       end
     end
@@ -108,20 +108,20 @@ RSpec.describe GamesController, type: :controller do
 
       it "updates the requested game" do
         game = Game.create! valid_attributes
-        put :update, {id: game.to_param, game: new_attributes}, valid_session
+        put :update, { id: game.to_param, game: new_attributes }, valid_session
         game.reload
         skip("Add assertions for updated state")
       end
 
       it "assigns the requested game as @game" do
         game = Game.create! valid_attributes
-        put :update, {id: game.to_param, game: valid_attributes}, valid_session
+        put :update, { id: game.to_param, game: valid_attributes }, valid_session
         expect(assigns(:game)).to eq(game)
       end
 
       it "redirects to the game" do
         game = Game.create! valid_attributes
-        put :update, {id: game.to_param, game: valid_attributes}, valid_session
+        put :update, { id: game.to_param, game: valid_attributes }, valid_session
         expect(response).to redirect_to(game)
       end
     end
@@ -129,13 +129,13 @@ RSpec.describe GamesController, type: :controller do
     describe "with invalid params" do
       it "assigns the game as @game" do
         game = Game.create! valid_attributes
-        put :update, {id: game.to_param, game: invalid_attributes}, valid_session
+        put :update, { id: game.to_param, game: invalid_attributes }, valid_session
         expect(assigns(:game)).to eq(game)
       end
 
       it "re-renders the 'edit' template" do
         game = Game.create! valid_attributes
-        put :update, {id: game.to_param, game: invalid_attributes}, valid_session
+        put :update, { id: game.to_param, game: invalid_attributes }, valid_session
         expect(response).to render_template("edit")
       end
     end
@@ -145,13 +145,13 @@ RSpec.describe GamesController, type: :controller do
     it "destroys the requested game" do
       game = Game.create! valid_attributes
       expect {
-        delete :destroy, {id: game.to_param}, valid_session
+        delete :destroy, { id: game.to_param }, valid_session
       }.to change(Game, :count).by(-1)
     end
 
     it "redirects to the games list" do
       game = Game.create! valid_attributes
-      delete :destroy, {id: game.to_param}, valid_session
+      delete :destroy, { id: game.to_param }, valid_session
       expect(response).to redirect_to(games_url)
     end
   end
