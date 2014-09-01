@@ -66,7 +66,7 @@ Style/IfUnlessModifier:
 # Offense count: 4
 # Cop supports --auto-correct.
 Style/IndentationConsistency:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 1
 # Cop supports --auto-correct.
