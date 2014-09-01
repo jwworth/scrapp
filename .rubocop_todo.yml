@@ -56,7 +56,7 @@ Style/EmptyLinesAroundAccessModifier:
 # Offense count: 2
 # Cop supports --auto-correct.
 Style/EmptyLinesAroundBody:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 1
 # Configuration parameters: MaxLineLength.
