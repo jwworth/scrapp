@@ -22,7 +22,7 @@ module MyScrabble
 
     # Insert wwwhisper as first middleware, if the addon is already installed
     if ENV['WWWHISPER_URL']
-      config.middleware.insert 0, "Rack::WWWhisper"
+      config.middleware.insert 0, 'Rack::WWWhisper'
     end
   end
 end

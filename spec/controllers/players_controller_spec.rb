@@ -24,11 +24,11 @@ RSpec.describe PlayersController, type: :controller do
   # Player. As you add validations to Player, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) do
-    skip("Add a hash of attributes valid for your model")
+    skip('Add a hash of attributes valid for your model')
   end
 
   let(:invalid_attributes) do
-    skip("Add a hash of attributes invalid for your model")
+    skip('Add a hash of attributes invalid for your model')
   end
 
   # This should return the minimal set of values that should be in the session
@@ -36,98 +36,98 @@ RSpec.describe PlayersController, type: :controller do
   # PlayersController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  describe "GET index" do
-    it "assigns all players as @players" do
+  describe 'GET index' do
+    it 'assigns all players as @players' do
       player = Player.create! valid_attributes
       get :index, {}, valid_session
       expect(assigns(:players)).to eq([player])
     end
   end
 
-  describe "GET show" do
-    it "assigns the requested player as @player" do
+  describe 'GET show' do
+    it 'assigns the requested player as @player' do
       player = Player.create! valid_attributes
       get :show, { id: player.to_param }, valid_session
       expect(assigns(:player)).to eq(player)
     end
   end
 
-  describe "GET new" do
-    it "assigns a new player as @player" do
+  describe 'GET new' do
+    it 'assigns a new player as @player' do
       get :new, {}, valid_session
       expect(assigns(:player)).to be_a_new(Player)
     end
   end
 
-  describe "GET edit" do
-    it "assigns the requested player as @player" do
+  describe 'GET edit' do
+    it 'assigns the requested player as @player' do
       player = Player.create! valid_attributes
       get :edit, { id: player.to_param }, valid_session
       expect(assigns(:player)).to eq(player)
     end
   end
 
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new Player" do
+  describe 'POST create' do
+    describe 'with valid params' do
+      it 'creates a new Player' do
         expect do
           post :create, { player: valid_attributes }, valid_session
         end.to change(Player, :count).by(1)
       end
 
-      it "assigns a newly created player as @player" do
+      it 'assigns a newly created player as @player' do
         post :create, { player: valid_attributes }, valid_session
         expect(assigns(:player)).to be_a(Player)
         expect(assigns(:player)).to be_persisted
       end
 
-      it "redirects to the created player" do
+      it 'redirects to the created player' do
         post :create, { player: valid_attributes }, valid_session
         expect(response).to redirect_to(Player.last)
       end
     end
 
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved player as @player" do
+    describe 'with invalid params' do
+      it 'assigns a newly created but unsaved player as @player' do
         post :create, { player: invalid_attributes }, valid_session
         expect(assigns(:player)).to be_a_new(Player)
       end
 
       it "re-renders the 'new' template" do
         post :create, { player: invalid_attributes }, valid_session
-        expect(response).to render_template("new")
+        expect(response).to render_template('new')
       end
     end
   end
 
-  describe "PUT update" do
-    describe "with valid params" do
+  describe 'PUT update' do
+    describe 'with valid params' do
       let(:new_attributes) do
-        skip("Add a hash of attributes valid for your model")
+        skip('Add a hash of attributes valid for your model')
       end
 
-      it "updates the requested player" do
+      it 'updates the requested player' do
         player = Player.create! valid_attributes
         put :update, { id: player.to_param, player: new_attributes }, valid_session
         player.reload
-        skip("Add assertions for updated state")
+        skip('Add assertions for updated state')
       end
 
-      it "assigns the requested player as @player" do
+      it 'assigns the requested player as @player' do
         player = Player.create! valid_attributes
         put :update, { id: player.to_param, player: valid_attributes }, valid_session
         expect(assigns(:player)).to eq(player)
       end
 
-      it "redirects to the player" do
+      it 'redirects to the player' do
         player = Player.create! valid_attributes
         put :update, { id: player.to_param, player: valid_attributes }, valid_session
         expect(response).to redirect_to(player)
       end
     end
 
-    describe "with invalid params" do
-      it "assigns the player as @player" do
+    describe 'with invalid params' do
+      it 'assigns the player as @player' do
         player = Player.create! valid_attributes
         put :update, { id: player.to_param, player: invalid_attributes }, valid_session
         expect(assigns(:player)).to eq(player)
@@ -136,20 +136,20 @@ RSpec.describe PlayersController, type: :controller do
       it "re-renders the 'edit' template" do
         player = Player.create! valid_attributes
         put :update, { id: player.to_param, player: invalid_attributes }, valid_session
-        expect(response).to render_template("edit")
+        expect(response).to render_template('edit')
       end
     end
   end
 
-  describe "DELETE destroy" do
-    it "destroys the requested player" do
+  describe 'DELETE destroy' do
+    it 'destroys the requested player' do
       player = Player.create! valid_attributes
       expect do
         delete :destroy, { id: player.to_param }, valid_session
       end.to change(Player, :count).by(-1)
     end
 
-    it "redirects to the players list" do
+    it 'redirects to the players list' do
       player = Player.create! valid_attributes
       delete :destroy, { id: player.to_param }, valid_session
       expect(response).to redirect_to(players_url)

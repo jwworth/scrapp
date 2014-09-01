@@ -12,7 +12,7 @@ RSpec.describe Game, type: :model do
   it { should validate_presence_of(:loser_id) }
   it { should validate_presence_of(:loser_score) }
 
-  it "should reject games with a higher loser score than winner score" do
+  it 'should reject games with a higher loser score than winner score' do
     game = Game.new(winner_id: 1, winner_score: 100, loser_id: 1, loser_score: 200)
     game.should_not be_valid
   end
