@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Player do
 
-  it 'should be have a valid factory' do
+  it 'should have a valid factory' do
     player = FactoryGirl.create(:player)
 
     expect(player).to be_valid
