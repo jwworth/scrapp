@@ -1,8 +1,0 @@
-########################
-# Custom deployment
-########################
-deployment:
-  dogfood:
-    branch: develop 
-    heroku:
-      appname: myscrabble-internal 
