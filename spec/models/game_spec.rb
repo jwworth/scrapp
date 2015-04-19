@@ -17,5 +17,12 @@ describe Game do
     expect(game).to_not be_valid
   end
 
-  # TODO Finish validations
+  it 'should provider player names' do
+    winner = FactoryGirl.create(:player)
+    loser = FactoryGirl.create(:player)
+    game = FactoryGirl.create(:game, winner: winner, winner_score: 200, loser: loser, loser_score: 100)
+
+    expect(game.winner_name).to eq winner.name
+    expect(game.loser_name).to eq loser.name
+  end
 end

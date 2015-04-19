@@ -1,6 +1,6 @@
-Feature: User views games
+Feature: Visitor views games
 
-  Scenario: User views game
+  Scenario: Visitor views game
     Given a game exists
     And I visit the homepage
     Then I should see the game

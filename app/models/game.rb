@@ -14,4 +14,12 @@ class Game < ActiveRecord::Base
   def set_default_bingos
     self.bingos ||= 0
   end
+
+  def winner_name
+    winner.name
+  end
+
+  def loser_name
+    loser.name
+  end
 end
