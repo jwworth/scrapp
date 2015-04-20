@@ -21,4 +21,7 @@
         = render 'shared/flash_messages'
         = yield
       .footer
-        %p.pull-right= "© " + Time.now.year.to_s
+        %p
+          .pull-right
+            = "© " + Time.now.year.to_s
+            = link_to 'Jake Worth', 'http://worth-chicago.co'

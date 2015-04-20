@@ -2,6 +2,19 @@ Given 'I visit the homepage' do
   visit root_path
 end
 
+Then 'I should see a link to the source code' do
+  within '.header' do
+    expect(page).to have_link '', href: 'https://github.com/jwworth/scrapp'
+  end
+end
+
+Then 'I should see the copyright information' do
+  within '.footer' do
+    expect(page).to have_content "© #{Date.today.year}"
+    expect(page).to have_link "Jake Worth", href: 'http://worth-chicago.co'
+  end
+end
+
 Given 'a game exists' do
   winner = FactoryGirl.create(:player)
   loser = FactoryGirl.create(:player)
