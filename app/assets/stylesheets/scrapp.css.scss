@@ -1,8 +1,8 @@
 // Normalization
 
 a {
-    text-decoration: initial;
-		color: black;
+  text-decoration: initial;
+  color: black;
 }
 
 ul {
@@ -11,58 +11,56 @@ ul {
 
 ul li {
   margin: 0;
-	padding: 0;
+  padding: 0;
 }
 
 // Application
 
 body {
   background-color: lightsteelblue;
-	main {
+  main {
     margin: 0 auto;
-		width: 900px;
-		header {
+    width: 900px;
+    header {
       h1 {
         margin: 0 auto;
-				width: 200px;
-      }
-			ul {
+        width: 200px;
+        }
+      ul {
         float: right;
-				margin-top: -27px;
-				li {
+        margin-top: -27px;
+        li {
           display: inline;
-					a {
-				    padding: 0 5px;
-				  }
-				}
+          a {
+            padding: 0 5px;
+          }
+        }
       }
-			p.subheader {
+      p.subheader {
         width: 300px;
-				margin: 0 auto;
-				margin-bottom: 10px;
-				padding: 15px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 15px;
       }
     }
-		article {
+    article {
       background-color: white;
-			padding: 10px;
+      padding: 10px;
       border-radius: 5px;
-			h3 {
-      }
-			table {
+      table {
         width: 100%;
-				text-align: center;
-				tr.even {
-				  background-color: #eee;
-				}
+        text-align: center;
+        tr.even {
+          background-color: #eee;
+        }
         td {
           padding: 5px;
         }
       }
     }
-		form {
+    form {
       .field, .actions {
-        padding: 10px 0;
+       padding: 10px 0;
       }
     }
     .warning {
@@ -73,7 +71,7 @@ body {
       padding: 10px 0;
     }
   }
-	footer {
-    float: right;
+    footer {
+      float: right;
   }
 }
