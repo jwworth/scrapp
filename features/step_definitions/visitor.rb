@@ -3,13 +3,13 @@ Given 'I visit the homepage' do
 end
 
 Then 'I should see a link to the source code' do
-  within '.header' do
-    expect(page).to have_link '', href: 'https://github.com/jwworth/scrapp'
+  within 'header' do
+    expect(page).to have_link 'Source', href: 'http://github.com/jwworth/scrapp'
   end
 end
 
 Then 'I should see the copyright information' do
-  within '.footer' do
+  within 'footer' do
     expect(page).to have_content "© #{Date.today.year}"
     expect(page).to have_link "Jake Worth", href: 'http://worth-chicago.co'
   end

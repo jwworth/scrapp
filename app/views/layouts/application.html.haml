@@ -6,22 +6,18 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    .container
-      .header
-        %ul.nav.nav-pills.pull-right
-          %li
-            %a{href: "https://github.com/jwworth/scrapp"}
-              = image_tag "GitHub-Mark-32px.png", :class => "media-object"
-        %h3.text-mute= link_to "Scrapp", root_path
-      %p.lead An app for tracking Scrabble games 
-      %p
-        = link_to "New Game", new_game_path, class: "btn btn-lg btn-success"
-        = link_to "New Player", new_player_path, class: "btn btn-lg btn-primary"
-      .row.marketing
+    %main
+      %header
+        %h1= link_to "Scrapp", root_path
+        %ul
+          %li= link_to "New Game", new_game_path
+          %li= link_to "New Player", new_player_path
+          %li= link_to "Source", "http://github.com/jwworth/scrapp"
+        %p.subheader An app for tracking Scrabble games
         = render 'shared/flash_messages'
+      %article
         = yield
-      .footer
+      %footer
         %p
-          .pull-right
-            = "© " + Time.now.year.to_s
-            = link_to 'Jake Worth', 'http://worth-chicago.co'
+          = "© " + Time.now.year.to_s
+          = link_to 'Jake Worth', 'http://worth-chicago.co'
