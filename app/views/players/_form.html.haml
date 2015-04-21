@@ -8,9 +8,6 @@
         %li= msg
 
 = form_for(@player) do |f|
-  .field
-    = f.label :name
-    %br/
-    = f.text_field :name, placeholder: "Enter name"
-  .actions
-    = f.submit
+  %p= f.label :name
+  %p= f.text_field :name, placeholder: "Enter name"
+  %p= f.submit
