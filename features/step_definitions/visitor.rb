@@ -3,7 +3,7 @@ Given 'I visit the homepage' do
 end
 
 Then 'I should see a link to the source code' do
-  within 'header' do
+  within 'footer' do
     expect(page).to have_link 'Source', href: 'http://github.com/jwworth/scrapp'
   end
 end

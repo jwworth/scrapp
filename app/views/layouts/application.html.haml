@@ -12,7 +12,6 @@
         %ul
           %li= link_to "New Game", new_game_path
           %li= link_to "New Player", new_player_path
-          %li= link_to "Source", "http://github.com/jwworth/scrapp"
         %p.subheader An app for tracking Scrabble games
         = render 'shared/flash_messages'
       %article
@@ -21,3 +20,5 @@
         %p
           = "© " + Time.now.year.to_s
           = link_to 'Jake Worth', 'http://worth-chicago.co'
+          \//
+          = link_to "Source", "http://github.com/jwworth/scrapp"
