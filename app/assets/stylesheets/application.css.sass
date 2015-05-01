@@ -1,8 +1,12 @@
+// Globals
+
+$font-color: rgba(46,48,58,0.96)
+
 // Normalization
 
 a
   text-decoration: initial
-  color: black
+  color: $font-color
 
 ul
   list-style: none
@@ -15,6 +19,7 @@ ul li
 // Application
 
 body
+  color: $font-color
   background-color: #ededed
   main
     margin: 0 auto
@@ -23,6 +28,8 @@ body
       h1
         margin: 0 auto
         width: 200px
+        a
+          color: #754C78
       ul
         float: right
         margin-top: -27px
