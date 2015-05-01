@@ -1,14 +1,14 @@
 !!!
 %html
   %head
-    %title SCRAPP
+    %title Scrapp
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
     %main
       %header
-        %h1= link_to "SCRAPP", root_path
+        %h1= link_to "Scrapp", root_path
         %ul
           %li= link_to "New Game", new_game_path
           %li= link_to "New Player", new_player_path
