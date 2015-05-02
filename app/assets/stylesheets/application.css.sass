@@ -1,6 +1,7 @@
 // Globals
 
-$font-color: rgba(46,48,58,0.96)
+$font-color: navy
+$background-color: steelblue
 
 // Normalization
 
@@ -19,20 +20,25 @@ ul li
 // Application
 
 body
-  color: $font-color
-  background-color: #ededed
+  color: navy
+  background-color: $background-color
   main
     margin: 0 auto
     width: 900px
     header
+      padding-top: 10px
       h1
         margin: 0 auto
         width: 200px
+        font-size: 50px
+        text-align: center
         a
-          color: #754C78
+          color: white
+      p.subheader
+        text-align: center
       ul
         float: right
-        margin-top: -27px
+        margin-top: -40px
         li
           display: inline
           a
@@ -51,7 +57,7 @@ body
         width: 100%
         text-align: center
         tr.even
-          background-color: #bdbdbd
+          background-color: lavender
         td
           padding: 5px
     .warning
@@ -61,5 +67,6 @@ body
       padding: 10px 0
 
     footer
+      padding: 15px 0
       margin: 0 auto
       width: 200px
