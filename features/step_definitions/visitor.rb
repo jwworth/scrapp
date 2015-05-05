@@ -11,7 +11,7 @@ end
 Then 'I should see the copyright information' do
   within 'footer' do
     expect(page).to have_content "© #{Date.today.year}"
-    expect(page).to have_link "Jake Worth", href: 'http://worth-chicago.co'
+    expect(page).to have_link 'Jake Worth', href: 'http://worth-chicago.co'
   end
 end
 

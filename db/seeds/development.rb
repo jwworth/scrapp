@@ -1,6 +1,6 @@
 jack = Player.find_or_create_by!(name: 'jack')
 jill = Player.find_or_create_by!(name: 'jill')
-puts "Found or created players Jack and Jill"
+puts 'Found or created players Jack and Jill'
 
 10.times do
   if rand(2) == 1
