@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe Game do
-
   let(:winner) { FactoryGirl.create(:player) }
   let(:loser) { FactoryGirl.create(:player) }
 
