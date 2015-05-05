@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   before_action :set_game, only: [:show, :edit, :update, :destroy]
 
   def index
-    @games = Game.all.sort_by { |obj| obj.created_at }.reverse
+    @games = Game.all.sort_by(&:created_at).reverse
   end
 
   def new
