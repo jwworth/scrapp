@@ -1,14 +1,15 @@
 !!!
 %html
   %head
-    %title Scrapp
+    %title SCRAPP
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    %link(href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css')
   %body
     %main
       %header
-        %h1= link_to "Scrapp", root_path
+        %h1= link_to "SCRAPP", root_path
         %ul
           %li= link_to "New Game", new_game_path
           %li= link_to "New Player", new_player_path
