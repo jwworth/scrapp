@@ -18,20 +18,23 @@ When 'I fill in the form' do
 end
 
 When 'I fill in the form with invalid data' do
-  # noop
+  fill_in 'Winner Score', with: nil
 end
 
 Then 'I should see my game' do
-  expect(page).to have_content 'Game was successfully created'
-  expect(page).to have_content 'User1'
-  expect(page).to have_content 'Winner Score: 100'
-  expect(page).to have_content 'User2'
-  expect(page).to have_content 'Loser Score: 80'
+  expect(page).to have_content(("Game was successfully updated") || ("Game was successfully created"))
+  expect(page).to have_content @game.id
 end
 
 Then 'I should see the new game page' do
   within 'article' do
     expect(page).to have_content 'New Game'
+  end
+end
+
+Then 'I should see the edit game page' do
+  within 'article' do
+    expect(page).to have_content 'Edit Game'
   end
 end
 
@@ -49,10 +52,7 @@ Then 'I should see the copyright information' do
 end
 
 Given 'a game exists' do
-  winner = FactoryGirl.create(:player)
-  loser = FactoryGirl.create(:player)
-
-  @game = FactoryGirl.create(:game, winner: winner, winner_score: 200, loser: loser, loser_score: 100)
+  @game = FactoryGirl.create(:game)
 end
 
 Given 'no games exist' do
