@@ -21,8 +21,13 @@ When 'I fill in the form with invalid data' do
   fill_in 'Winner Score', with: nil
 end
 
-Then 'I should see my game' do
-  expect(page).to have_content(("Game was successfully updated") || ("Game was successfully created"))
+Then 'I should see my new game' do
+  expect(page).to have_content("Game was successfully created")
+  expect(page).to have_content Game.last.id
+end
+
+Then 'I should see my edited game' do
+  expect(page).to have_content("Game was successfully updated")
   expect(page).to have_content @game.id
 end
 

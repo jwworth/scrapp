@@ -8,7 +8,7 @@ Feature: Vistor edits game
     Then I should see the edit game page
     When I fill in the form
     And I click "Submit"
-    Then I should see my game
+    Then I should see my edited game
 
   Scenario: With invalid data
     Given two players exist

@@ -7,7 +7,7 @@ Feature: Vistor creates game
     Then I should see the new game page
     When I fill in the form
     And I click "Submit"
-    Then I should see my game
+    Then I should see my new game
 
   Scenario: With invalid data
     When I visit the homepage
