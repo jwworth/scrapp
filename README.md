@@ -1,19 +1,20 @@
 # Scrapp
 
+[![Circle CI](https://circleci.com/gh/jwworth/scrapp.svg?style=svg)](https://circleci.com/gh/jwworth/scrapp)
+
 This is an app I built to track Scrabble games.
+
+https://scrapp.herokuapp.com
 
 ### Setup
 
 ```
-git clone http://github.com/jwworth/scrapp.git
-cd scrapp
-rake db:create db:setup db:migrate db:seed
-rails s
+$ git clone https://github.com/jwworth/scrapp.git
+$ cd scrapp
+$ rake db:setup
+$ rails s
 ```
 
 ### License
 
-&copy; 2015 Jake Worth
-
-This repository is distributed under the MIT license. See `LICENSE` for
-details.
+This project is released under the [MIT License](http://www.opensource.org/licenses/MIT).
