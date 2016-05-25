@@ -3,15 +3,15 @@ default: &default
   encoding: unicode
   pool: 5
   host: localhost
-  username: my_scrabble
-  password: password
 
 development:
   <<: *default
   database: my_scrabble_development
+
 test: &test
   <<: *default
   database: my_scrabble_test
+
 production:
   <<: *default
   database: my_scrabble_production
