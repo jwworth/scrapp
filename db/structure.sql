@@ -39,10 +39,10 @@ SET default_with_oids = false;
 
 CREATE TABLE games (
     id integer NOT NULL,
-    winner_id integer,
-    winner_score integer,
-    loser_id integer,
-    loser_score integer,
+    winner_id integer NOT NULL,
+    winner_score integer DEFAULT 1 NOT NULL,
+    loser_id integer NOT NULL,
+    loser_score integer DEFAULT 0 NOT NULL,
     bingos integer,
     created_at timestamp without time zone,
     updated_at timestamp without time zone
@@ -74,7 +74,7 @@ ALTER SEQUENCE games_id_seq OWNED BY games.id;
 
 CREATE TABLE players (
     id integer NOT NULL,
-    name character varying,
+    name character varying NOT NULL,
     created_at timestamp without time zone,
     updated_at timestamp without time zone
 );
@@ -154,4 +154,8 @@ SET search_path TO "$user", public;
 INSERT INTO schema_migrations (version) VALUES ('20140831182047');
 
 INSERT INTO schema_migrations (version) VALUES ('20140831190553');
+
+INSERT INTO schema_migrations (version) VALUES ('20160825043913');
+
+INSERT INTO schema_migrations (version) VALUES ('20160825045013');
 
