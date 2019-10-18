@@ -20,7 +20,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.1'
 end
 
 group :test do
