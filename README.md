@@ -4,13 +4,14 @@
 
 This is an app I built to track Scrabble games.
 
-https://scrapp.herokuapp.com
+![screenshot](./docs/scrapp.png)
 
 ### Setup
 
 ```
 $ git clone https://github.com/jwworth/scrapp.git
 $ cd scrapp
+$ bundle
 $ rake db:setup
 $ rails s
 ```
