@@ -4,6 +4,8 @@
 
 This is an app I built to track Scrabble games.
 
+![screenshot](./docs/scrapp.png)
+
 ### Setup
 
 ```
