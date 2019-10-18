@@ -9,6 +9,7 @@ This is an app I built to track Scrabble games.
 ```
 $ git clone https://github.com/jwworth/scrapp.git
 $ cd scrapp
+$ bundle
 $ rake db:setup
 $ rails s
 ```
